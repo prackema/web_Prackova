@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-jetbrains: "JetBrains Mono", monospace;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #e0e0e0;
+  --cyber-green: #00ff41;
+  --cyber-blue: #00d4ff;
+  --cyber-purple: #b300ff;
+  --dark-bg: #0f0f0f;
+  --darker-bg: #050505;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-jetbrains);
+}
+
+.glow-border {
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5),
+              0 0 20px rgba(0, 255, 65, 0.3),
+              0 0 30px rgba(0, 255, 65, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.7);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.8),
+               0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+.cyber-gradient {
+  background: linear-gradient(135deg, #00ff41 0%, #00d4ff 50%, #b300ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
